@@ -42,14 +42,6 @@
             2019/10/15(Tue) 15:20:01
         .text
           こんにちは
-    -# .form
-    -#   %form{class: "new_message", id:"new_message", enctype:"multipart/from-data", action:"/", method:"post" }
-    -#     .input-box
-    -#       .text
-    -#       %label
-    -#         = fa_icon 'image', class: "image-icon"
-    -#         %input{type:"file", style:"display:none;"}
-    -#     %form{type:"submit", class: "submit-btn", value: "Send"}
 
     .form
       %form#new_message.new_message{"accept-charset": "UTF-8", action: "/groups/2739/messages", enctype: "multipart/form-data", method: "post"}
