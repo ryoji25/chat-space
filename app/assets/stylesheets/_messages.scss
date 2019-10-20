@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .flash-box{
@@ -55,14 +56,17 @@
       background-color: #2f3e51;
       padding: 20px 20px 0;
       overflow: scroll;
+
       .group {
         margin-bottom: 40px;
         .group-name {
           font-size: 15px;
           margin-bottom: 5px;
+          color: white;
         }
         .latest-message {
           font-size: 11px;
+          color: white;
         }
       }
     }

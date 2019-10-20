@@ -1,28 +1,7 @@
 .flash-box
 
 .wrapper
-  .chat-side
-    .side-header
-      .box
-        .user-name
-          test22
-        .menu
-          .new-group
-          =link_to  "#", class: "new-group-btn" do
-            = fa_icon 'cog'
-          .edit-user
-          =link_to  "#", class: "edit-user-btn" do
-            = fa_icon 'plus'
-
-
-    .groups
-      .group
-        .group-name
-          グループ1
-        .latest-message
-          こんにちは
-
-
+  = render 'shared/side_bar'
   .chat-main
     .main-header
       .left-box
@@ -32,7 +11,7 @@
           Member :
           .member
           test22
-      = link_to 'Edit', '#', class: "edit-btn"
+      = link_to 'Edit', "/groups/1/edit", class: "edit-btn"
     .messages
       .message
         .upper-info
