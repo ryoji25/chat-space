@@ -112,72 +112,140 @@
       }
     }
     .messages {
-      height: calc(100vh - 190px);
-      padding: 46px 40px;
-      background-color: #fafafa;
-      overflow: scroll;
+      background-color: #FAFAFA;
+      box-sizing: border-box;
+      padding: 46px 40px 0;
+      height: calc(100% - 100px - 90px);
       .message {
-        padding-bottom: 40px;
-        .upper-info {
+        .upper-message {
           display: flex;
-          margin-bottom: 10px;
-          .talker {
-            color: #434a54;
+          &__user-name {
+            color: $black;
             font-size: 16px;
             font-weight: bold;
           }
-          .date {
-            color: #999999;
+          &__date {
+            color: $light_gray;
             font-size: 12px;
-            margin-left: 10px;
+            padding-left: 10px;
           }
         }
-        .text {
-          color: #434a54;
-          font-size: 14px;
-          margin-bottom: 10px;
+        .lower-message {
+          margin-top: 10px;
+          &__content {
+            color: $black;
+            font-size: 14px;
+            margin-bottom: 40px;
+          }
         }
       }
     }
+
+    // .messages {
+    //   height: calc(100vh - 190px);
+    //   padding: 46px 40px;
+    //   background-color: #fafafa;
+    //   overflow: scroll;
+    //   .message {
+    //     padding-bottom: 40px;
+    //     .upper-info {
+    //       display: flex;
+    //       margin-bottom: 10px;
+    //       .talker {
+    //         color: #434a54;
+    //         font-size: 16px;
+    //         font-weight: bold;
+    //       }
+    //       .date {
+    //         color: #999999;
+    //         font-size: 12px;
+    //         margin-left: 10px;
+    //       }
+    //     }
+    //     .text {
+    //       color: #434a54;
+    //       font-size: 14px;
+    //       margin-bottom: 10px;
+    //     }
+    //   }
+    // }
     .form {
+      background-color: #DDDDDD;
+      box-sizing: border-box;
       height: 90px;
-      padding: 20px 40px;
-      background-color: #ddd;
-      .new_message {
-        display: flex;
+      padding: 20px 50px 20px 40px;
+      &__message {
+        border: none;
+        float: left;
         height: 50px;
-        .input-box {
-          position: relative;
-          width: 100%;
-          // display: flex;
-          // justify-content: center;
-          // align-items: center;
-          .input-box__text {
-            height: 50px;
-            width: 100%;
-            padding: 0 40px 0 10px;
-            color: #434a54;
-            border-style: none;
-          }
-          .input-box__image {
-            font-size: 1.3rem;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-          }
-          }
-        .submit-btn {
-            width: 100px;
-            height: 50px;
-            background-color: #38aef0;
-            color: white;
-            padding: 0 30px;
-            margin-left: 15px;
-            cursor: pointer;
+        width: calc(100% - 150px);
+      }
+      &__mask {
+        background-color: $white;
+        float: left;
+        height: 50px;
+        padding-right: 10px;
+        &__image {
+          font-size: 20px;
+          line-height: 50px;
         }
-        
+        .hidden {
+          display: none;
+        }
+      }
+      &__submit {
+        background-color: $light_blue;
+        border: none;
+        color: $white;
+        float: right;
+        font-size: 16px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
       }
     }
   }
 }
+
+//     .form {
+//       height: 90px;
+//       padding: 20px 40px;
+//       background-color: #ddd;
+//       .new_message {
+//         display: flex;
+//         height: 50px;
+//         .input-box {
+//           position: relative;
+//           width: 100%;
+//           // display: flex;
+//           // justify-content: center;
+//           // align-items: center;
+//           .input-box__text {
+//             height: 50px;
+//             width: 100%;
+//             padding: 0 40px 0 10px;
+//             color: #434a54;
+//             border-style: none;
+//           }
+//           .input-box__image {
+//             font-size: 1.3rem;
+//             position: absolute;
+//             top: 10px;
+//             right: 10px;
+//             cursor: pointer;
+//           }
+//           }
+//         .submit-btn {
+//             width: 100px;
+//             height: 50px;
+//             background-color: #38aef0;
+//             color: white;
+//             padding: 0 30px;
+//             margin-left: 15px;
+//             cursor: pointer;
+//         }
+        
+//       }
+//     }
+//   }
+// }
