@@ -6,11 +6,11 @@
     .main-header
       .left-box
         .current-group
-          グループ1
+          = @group.name
         .member-list
           Member :
-          .member
-          test22
+          - @group.users.each do |user|
+            = user.name
       = link_to 'Edit', "/groups/1/edit", class: "edit-btn"
     .messages
       = render @messages

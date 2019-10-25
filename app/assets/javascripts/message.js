@@ -35,7 +35,6 @@ $(function(){
     })
     .done(function(message){
       var html = buildPost(message);
-      console.log(message);
       $('.messages').append(html);
       $('.form__message').val('');
       $(".messages").animate({
