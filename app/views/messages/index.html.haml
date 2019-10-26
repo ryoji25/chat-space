@@ -14,26 +14,6 @@
       = link_to 'Edit', "/groups/1/edit", class: "edit-btn"
     .messages
       = render @messages
-
-      -# .message
-      -#   .upper-info
-      -#     .talker
-      -#       testさん
-      -#     .date
-      -#       2019/10/15(Tue) 15:20:01
-      -#   .text
-      -#     こんにちは
-          
-    -# .form
-    -#   %form#new_message.new_message{"accept-charset": "UTF-8", action: "/groups/2739/messages", enctype: "multipart/form-data", method: "post"}
-    -#     %input{name: "utf8", type: "hidden", value: "✓"}/
-    -#     .input-box
-    -#       %input#message_content.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
-    -#       %label.input-box__image{for: "message_image"}
-    -#         %i.fa.fa-image
-    -#         %input#message_image.input-box__image__file{name: "message[image]", type: "file", style:"display:none;"}/
-    -#     %input.submit-btn{name: "commit", type: "submit", value: "Send"}/
-
     .form
       = form_for [@group, @message] do |f|
         = f.text_field :content, class: 'form__message', placeholder: 'type a message'
