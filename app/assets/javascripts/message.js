@@ -47,6 +47,9 @@ $(function(){
     .fail(function(){
       alert('エラー');
     })
+    .always(function(){
+      $('input').prop('disabled', false)
+    })
   })
   var reloadMessages = function() {
     if (window.location.href.match(/\/groups\/\d+\/messages/)){
