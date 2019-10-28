@@ -11,7 +11,8 @@
           Member :
           - @group.users.each do |user|
             = user.name
-      = link_to 'Edit', "/groups/1/edit", class: "edit-btn"
+      = link_to 'edit', class: "edit-btn" do
+        Edit
     .messages
       = render @messages
     .form
