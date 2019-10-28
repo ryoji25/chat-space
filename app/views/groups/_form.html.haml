@@ -25,7 +25,7 @@
 
       
       #chat-group-users.js-add-user
-        - members.each do |member|
+        - @members.each do |member|
           .chat-group-user.clearfix.js-chat-member#chat-group-user-8
             %input{name: "group[user_ids][]", type: "hidden", value: "#{member.id}"}
             %p.chat-group-user__name
